@@ -1,0 +1,27 @@
+server: 
+  port: 9527
+ 
+spring: 
+  application:
+    name: springcloudDemo-zuul-gateway
+zuul:
+  prefix: /demo # 访问路径的前缀
+  ignored-services: "*" # 隐藏所有微服务的名称
+  routes:
+    mydept.serviceId: springcloudDemo-dept # 将 路由/mydept/** 映射到 微服务的名称
+    mydept.path: /mydept/**
+eureka: 
+  client: 
+    service-url: 
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka,http://eureka7003.com:7003/eureka  
+  instance:
+    instance-id: gateway-9527.com
+    prefer-ip-address: true 
+ 
+ 
+info:
+  app.name: atguigu-microcloud
+  company.name: www.atguigu.com
+  build.artifactId: springcloudDemo-zuul-gateway-9527
+  build.version: 0.0.1-SNAPSHOT
+

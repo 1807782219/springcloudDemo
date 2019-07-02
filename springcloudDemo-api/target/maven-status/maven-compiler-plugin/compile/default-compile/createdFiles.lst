@@ -1,0 +1,4 @@
+com\mike\demo\entities\Dept.class
+com\mike\demo\service\DeptClientServiceFallbackFactory$1.class
+com\mike\demo\service\DeptClientService.class
+com\mike\demo\service\DeptClientServiceFallbackFactory.class

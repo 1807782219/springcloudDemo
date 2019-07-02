@@ -1,0 +1,13 @@
+server: 
+  port: 3344 
+  
+spring:
+  application:
+    name:  springcloudDemo-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:1807782219/springclouddemo-config.git #GitHub上面的SpringCloud Config 的 git仓库名字
+ 
+
